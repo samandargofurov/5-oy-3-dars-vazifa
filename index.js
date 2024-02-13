@@ -38,8 +38,11 @@ class Playlist{
     }
 }
 
-let alex = new Playlist("ona", "jaloldin ahmadaliyev", "shunchaki qoshiq", 2022, "ozi", 147000, Date.now());
-let john = new Playlist("dost", "kimdir", "shunchaki qoshiq", 2023, "ozi", 147000, Date.now());
-let doe = new Playlist("ota", "kimdir", "shunchaki qoshiq", 2020, "ozi", 147000, Math.trunc(Date.now() / 2024));
+let user = new Set();
 
-console.log(alex);
+user.set("ona", "Jaloldin Ahmadaliyev", "shunchaki qoshiq", 2022, "Jaloldin Ahmadaliyev", 17000, Math.trunc(Date.now()));
+user.set("qaldirgoch", "Alisher Fayz", "shunchaki qoshiq", 2023, "Alisher Fayz", 12000, Math.trunc(Date.now()));
+user.set("ona", "Sardor Mamadaliyev", "shunchaki qoshiq", 2020, "Sardor Mamadaliyev", 47000, Math.trunc(Date.now()));
+
+user.delete('name');
+console.log(user.name);
